@@ -7,11 +7,18 @@ function Tennis(){
   this.count_point = function(Whois){
 
 
-  
+    if(Whois === 'p1'){
+        if(this.point_player1 === 0 && this.point_player2 === 0)
+            this.point_player1 +=15
+
+      }
+
 
 
     if(this.point_player1 === 0 && this.point_player2 === 0)
         return "love - love";
+    else if(this.point_player1 === 15 && this.point_player2 === 0)
+        return "fifteen - love";
 
   }
 }
