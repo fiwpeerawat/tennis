@@ -30,9 +30,9 @@ function Tennis(){
 
 
   this.count_point = function(){
-	
-	
-	
+
+
+
   }
 }
 
@@ -47,7 +47,16 @@ describe("count-point", function() {
       var tennis = new Tennis()
       expect(tennis.count_point()).toBe("love - love")
     });
-	
+
+    it('should "fifteen - Love"', function() {
+
+      var tennis = new Tennis()
+
+      tennis.put_point('p1')
+      expect(tennis.count_point()).toBe("fifteen - love")
+    });
+
+
 
 
 
