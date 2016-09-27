@@ -189,6 +189,19 @@ describe("count-point", function() {
             expect(tennis.count_point()).toBe("fourty - fifteen")
           });
 
+          it('should "fourty - thirty"', function() {
+
+            var tennis = new Tennis()
+
+            tennis.put_point('p1')
+            tennis.put_point('p1')
+            tennis.put_point('p1')
+            tennis.put_point('p2')
+            tennis.put_point('p2')
+
+            expect(tennis.count_point()).toBe("fourty - thirty")
+          });
+
 
 
 
