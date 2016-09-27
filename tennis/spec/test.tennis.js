@@ -116,8 +116,18 @@ describe("count-point", function() {
 
 
               expect(tennis.count_point()).toBe("fifteen - fifteen")
-            });
+        });
 
+        it('should "fifteen - thirty"', function() {
+
+              var tennis = new Tennis()
+
+              tennis.put_point('p1')
+              tennis.put_point('p2')
+              tennis.put_point('p2')
+
+              expect(tennis.count_point()).toBe("fifteen - thirty")
+          });
 
 
 
