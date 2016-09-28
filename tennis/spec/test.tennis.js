@@ -220,6 +220,18 @@ describe("count-point", function() {
                 expect(tennis.count_point()).toBe("fourty - fourty")
               });
 
+            it('should "Player B won"', function() {
+
+                    var tennis = new Tennis()
+
+                    tennis.put_point('p2')
+                    tennis.put_point('p2')
+                    tennis.put_point('p2')
+                    tennis.put_point('p2')
+
+                  expect(tennis.count_point()).toBe("Player B won")
+             });
+
 
 
 });
