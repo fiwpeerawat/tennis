@@ -13,6 +13,8 @@ function Tennis(){
             this.point_player1 +=15
         else if(this.point_player1 === 30 )
             this.point_player1 +=10
+        else if(this.point_player1 === 40 )
+                this.point_player1 =99//set for check A win
 
       }
 
@@ -23,6 +25,8 @@ function Tennis(){
               this.point_player2 +=15
           else if(this.point_player2 === 30 )
               this.point_player2 +=10
+          else if(this.point_player2 === 40 )
+              this.point_player2 =99//set for check B win
 
         }
 
