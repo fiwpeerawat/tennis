@@ -35,7 +35,22 @@ function Tennis(){
 
   this.count_point = function(){
 
-      
+    var get_point_1 = "love";
+    var get_point_2 = "love";
+
+    if(this.point_player1 === 99) return "Player A won"
+    if(this.point_player2 === 99) return "Player B won"
+
+    if(this.point_player1 === 15)  get_point_1 = "fifteen"
+    if(this.point_player2 === 15)  get_point_2 = "fifteen"
+
+    if(this.point_player1 === 30)  get_point_1 = "thirty"
+    if(this.point_player2 === 30)  get_point_2 = "thirty"
+
+    if(this.point_player1 === 40)  get_point_1 = "fourty"
+    if(this.point_player2 === 40)  get_point_2 = "fourty"
+
+    return get_point_1+" - "+get_point_2
 
 
 
